@@ -7,7 +7,9 @@ This project is built to demonstrate **practical frontend development skills** u
 
 ---
 ## 🌐 Live Demo
-🔗 https://internhub-dashboard.vercel.app
+ ## 🌐 Live Demo
+🔗 https://internhub-dashboard-six.vercel.app/
+
 ---
 
 ## ✨ Features
