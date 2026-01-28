@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# 🚀 InternHub – Internship Task Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+InternHub is a **frontend-focused internship task management dashboard** that simulates a real-world internship workflow.  
+It allows **Admins to create and manage tasks with embedded learning videos** and **Interns to track task progress** using a clean, responsive, role-based user interface.
 
-## Available Scripts
+This project is built to demonstrate **practical frontend development skills** using React.
 
-In the project directory, you can run:
+---
+## 🌐 Live Demo
+🔗 https://internhub-dashboard.vercel.app
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔐 Authentication & Role-Based Access
+- Mock authentication using localStorage
+- Role selection: **Admin / Intern**
+- Protected routes (Dashboard & Profile)
+- Role-based UI:
+  - Admin can add and delete tasks
+  - Intern can only view tasks and update status
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### 📝 Task Management
+- Add new tasks (Admin only)
+- Update task status:
+  - Pending → In Progress → Completed
+- Delete tasks (Admin only)
+- Tasks persist after page refresh
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### ▶️ Embedded Learning Videos
+- Admin can attach **YouTube / Google Drive video links** to tasks
+- Videos are **embedded directly inside task cards**
+- Interns can watch videos without leaving the dashboard
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📊 Dashboard Overview
+- Total tasks
+- Completed tasks
+- Pending tasks
+- Clean card-based layout
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 🔍 Search & Filter
+- Search tasks by title
+- Filter tasks by status:
+  - All
+  - Pending
+  - In Progress
+  - Completed
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🌙 Dark / Light Mode
+- Toggle between Dark and Light themes
+- Modern, stylish dark mode UI
+- Theme preference saved using localStorage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 👤 User Profile Page
+- Displays:
+  - User name
+  - Role (Admin / Intern)
+  - Tasks completed
+  - Theme preference
+- Makes authentication meaningful and personalized
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 📱 Responsive Design
+- Fully responsive on:
+  - Mobile
+  - Tablet
+  - Desktop
+- Responsive embedded videos
+- Mobile-friendly layout and navigation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🛠️ Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React.js** – Component-based UI
+- **JavaScript (ES6+)** – Application logic
+- **CSS3** – Flexbox, Grid, responsive layouts, dark mode
+- **React Router DOM** – Routing and protected routes
+- **localStorage** – Client-side data persistence
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📂 Project Structure
+internHub
+│
+├─ public
+│  └─ index.html
+│
+├─ src
+│  ├─ components
+│  │  ├─ navbar.jsx
+│  │  ├─ dashboardStats.jsx
+│  │  ├─ taskCard.jsx
+│  │  ├─ taskForm.jsx
+│  │  └─ protectedRoute.jsx
+│  │
+│  ├─ pages
+│  │  ├─ login.jsx
+│  │  ├─ dashboard.jsx
+│  │  └─ profile.jsx
+│  │
+│  ├─ styles
+│  │  └─ main.css
+│  │
+│  ├─ app.jsx
+│  └─ index.js
+│
+├─ screenshots
+│  ├─ login.png
+│  ├─ dashboard-light.png
+│  ├─ dashboard-dark.png
+│  ├─ task-video.png
+│  └─ profile.png
+│
+├─ .gitignore
+├─ package.json
+├─ package-lock.json
+├─ vercel.json
+└─ README.md
